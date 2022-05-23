@@ -10,15 +10,15 @@ namespace EmployeeWages
     
 
         {
-        public void WageForMonth()
+        public void WageForMonth(int empWagePerHour, int empWorkDaysPerMonth, int maxWorkingHours)
         {
-            int empWagePerHour = 20, empWorkDaysPerMonth = 20, empHours, salaryForDay;
+            int empHours, salaryForDay;
             int totalWorkingDays = 0, totalSalary = 0, totalWorkingHours = 0;
             Random value = new Random();
 
             for (int i = totalWorkingDays; i < empWorkDaysPerMonth; i++)
             {
-                if (i < empWorkDaysPerMonth && totalWorkingHours < 100)
+                if (i < empWorkDaysPerMonth && totalWorkingHours < maxWorkingHours)
                 {
                     int randomCheck = value.Next(3);
                     //Console.WriteLine("Generated random value is:" + randomCheck);
@@ -52,7 +52,8 @@ namespace EmployeeWages
             Console.WriteLine("Monthly salary of an Employee is:" + totalSalary);
         }
     }
-        }
+    }
+       
  
 
     
