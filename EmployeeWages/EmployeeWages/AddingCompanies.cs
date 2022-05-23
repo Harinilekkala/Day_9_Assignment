@@ -48,6 +48,7 @@ namespace EmployeeWages
                 }
             }
             Console.WriteLine("Total Working Days of an Employee is:" + totalWorkingDays);
+            Console.WriteLine("-------------------------------------------------------------------");
             Console.WriteLine("Total Working Hours of an Employee is:" + totalWorkingHours);
             Console.WriteLine("Monthly salary of an Employee is:" + totalSalary);
         }
