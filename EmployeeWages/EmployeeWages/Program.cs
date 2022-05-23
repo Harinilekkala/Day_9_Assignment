@@ -8,7 +8,8 @@ namespace Employee
         public static void Main(String[] args)
         {
             EmployeeWages.AddingCompanies getMethod = new EmployeeWages.AddingCompanies();
-            getMethod.AttendanceCheck();
+            getMethod.WageForMonth();
+            
         }
     }
 }
