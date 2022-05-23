@@ -7,15 +7,16 @@ namespace Employee
     {
         public static void Main(String[] args)
         {
-            EmployeeWages.AddingCompanies getMethod = new EmployeeWages.AddingCompanies();
-            Console.WriteLine("Employee Wage for Company A:");
-            getMethod.WageForMonth(20, 20, 100);
+            
+            EmployeeWages.AddingCompanies companyA = new EmployeeWages.AddingCompanies("CompanyA", 20, 20, 100);
+            EmployeeWages.AddingCompanies companyB = new EmployeeWages.AddingCompanies("CompanyB", 40, 22, 95);
+            
+            companyA.WageForMonth();
+            Console.WriteLine(companyA.toString());
             Console.WriteLine();
-            Console.WriteLine("Employee Wage for Company B:");
-            getMethod.WageForMonth(40, 25, 80);
-            Console.WriteLine();
-            Console.WriteLine("Employee Wage for Company C:");
-            getMethod.WageForMonth(60, 15, 90);
+            companyB.WageForMonth();
+            Console.WriteLine(companyB.toString());
+
         }
     }
 }
